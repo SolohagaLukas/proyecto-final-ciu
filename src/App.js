@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <Fragment>
+    <Fragment>      
       <div style={
         {
           padding:"100px",
@@ -30,18 +30,7 @@ function App() {
           alignItems:"center"
         }
       }>
-        <div className="row">
-          <div className="col-lg-4">
-            <img src={images}></img>
-          </div>
-          <div className="col-lg-4">
-            <img src={images}></img>
-          </div>
-          <div className="col-lg-4">
-            <img src={images}></img>
-          </div>
-        </div>
-        <br></br>
+        <h3>Traer bebida aleatoria</h3><br></br>
         <button
           className="btn btn-outline-light"
           onClick={consultarAPI}>
@@ -49,6 +38,7 @@ function App() {
         </button>
         <br></br>
         <Bebida bebidaProp={bebida}/>
+        <img class="random-img" src={bebida.strDrinkThumb}></img>
       </div>
     </Fragment>
   );
