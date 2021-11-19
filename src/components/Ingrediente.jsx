@@ -1,5 +1,5 @@
 import React from 'react'
-const Bebida = ({bebidaProp}) => {
+const Ingrediente = ({ingredienteProp}) => {
     return (
         <div
             style={
@@ -13,10 +13,11 @@ const Bebida = ({bebidaProp}) => {
                     textEmphasisColor:"black"
                 }
             }>
-            <p>{bebidaProp.idDrink} - {bebidaProp.strDrink}</p>
-            <img src={bebidaProp.strDrinkThumb} height= "300px"></img>
+            <h4>{ingredienteProp.idIngredient} - {ingredienteProp.strIngredient}</h4>
+            <h4>Descripcion</h4>
+            <p>{ingredienteProp.strDescription}</p>
         </div>
     );
 }
 
-export default Bebida;
+export default Ingrediente;

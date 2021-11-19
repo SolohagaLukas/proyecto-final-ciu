@@ -37,7 +37,61 @@
   }
 }
 
-.random-img {
-  height: 300px;
+.inputBuscar {
+  width: 50% !important;
 }
 
+.containerInput {
+  align-items: center;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 1500px){
+
+  .inputBuscar{
+    width: 100% !important;
+  }
+
+  .containerInput{
+    padding-bottom: 15px;
+  }
+  
+}
+
+.table-img{
+  width: 150px;
+  height: 150px;
+}
+
+.diccionario{
+  border: 1px;
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  padding: 20px, 20px;
+  text-align: justify;
+}
+
+
+.separador{
+  width: 90%;
+}
+
+.ingrediente{
+  width: 95%;
+}
+
+.populares{
+  width: 75%;
+}
+
+.imagen-bienvenida{
+  width: 60%;
+}
+
+.tabla-bienvenida{
+  width: 100%;
+}
